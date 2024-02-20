@@ -1,0 +1,10 @@
+name: Echo Workflow
+
+on: [push]
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo your name
+        run: echo "Hello, $ { { github.actor }}!"
